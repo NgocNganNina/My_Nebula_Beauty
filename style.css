@@ -1,0 +1,69 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 600vh; /* Smooth, continuous auto-scroll track */
+  background-color: #000;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome / Safari / Edge */
+}
+
+/* --- Hardware-Accelerated Fullscreen Video (Zero Lag, Native GPU) --- */
+#cosmic-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background-color: #000;
+  z-index: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* --- Minimalist Cinematic Captions (Centered Cursive Calligraphy) --- */
+.captions-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.caption-text {
+  position: absolute;
+  max-width: 90vw;
+  text-align: center;
+  font-family: 'Great Vibes', 'Allura', 'Alex Brush', cursive;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  padding: 0 1.5rem;
+  color: #ffffff;
+  text-shadow:
+    0 2px 15px rgba(0, 0, 0, 0.95),
+    0 4px 35px rgba(0, 0, 0, 0.9),
+    0 0 30px rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transform: translateY(20px) scale(0.96);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.caption-text.is-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
