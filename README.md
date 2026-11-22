@@ -24,15 +24,20 @@ The webpage automatically plays instantly on load and continuously scrolls down 
    - When reaching the event horizon singularity, it seamlessly loops back to the beginning and continues scrolling forever.
    - If you spin the mouse wheel to scroll manually, the video instantly scrubs to that position and continues playing.
 
-5. **🚫 100% Pure Video (Zero UI Clutter)**:
-   - No control bars, no buttons, no end card popups.
+5. **🎵 Automatic Background Soundtrack ("Someone You Loved")**:
+   - Atmospheric playback of *Someone You Loved* (`Someone You Loved.mp3`).
+   - Autoplays automatically and loops indefinitely at the end of the song.
+   - Zero controls, zero buttons: plays purely in the background while the visuals and cursive captions unfold.
+
+6. **🚫 100% Pure Video (Zero UI Clutter)**:
+   - Zero control bars, zero buttons, zero popups.
    - Only full-screen cinematic cosmic visuals accompanied by minimalist cursive calligraphy captions.
 
-6. **⌨️ Invisible Background Keyboard Controls (Optional)**:
+7. **⌨️ Invisible Background Keyboard Controls (Optional)**:
    - **`1`**: Normal Speed (1.0x, ~24s)
    - **`2`**: Fast Speed (1.35x, ~18s — "a little fast")
    - **`S`**: Toggle between Normal and Fast Speed
-   - **`Space`** or **Click video**: Pause / Resume
+   - **`Space`**: Pause / Resume Journey & Music
    - **`F`**: Toggle Fullscreen
    - **`R`**: Jump back to start
 
@@ -41,9 +46,10 @@ The webpage automatically plays instantly on load and continuously scrolls down 
 ## 📁 Files
 
 - `Cosmic_Journey.mp4`: Rendered master 1080p 30 FPS video (~24 seconds, 16.9 MB).
-- `index.html`: Clean full-screen HTML5 video surface with cursive captions.
+- `Someone You Loved.mp3`: Background soundtrack (3 min 2 sec).
+- `index.html`: Clean full-screen HTML5 video surface with cursive captions and background audio.
 - `style.css`: Minimalist styling, GPU cover fit, hidden scrollbars.
-- `app.js`: Autonomous auto-scrolling synchronization, instant autoplay, and keyboard hotkeys.
+- `app.js`: Autonomous auto-scrolling synchronization, instant autoplay, automatic song looping, and hotkeys.
 
 ---
 
